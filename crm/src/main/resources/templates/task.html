@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="task.css">
+    <script src="task.js"></script>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-dark nav-bg">
+    <a class="navbar-brand" href="#"><img src="logo.jpeg" class="img" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+            <a class="nav-link active" href="home.html" id="text">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="task.html" id="text">Tasks</a>
+            <a class="nav-link" href="sales.html" id="text">Sales</a>
+            <a class="nav-link" href="#" id="text">Contacts</a>
+            <a class="nav-link" href="#" id="text">Customer Care</a>
+        </div>
+    </div>
+</nav>  
+
+<div class="main-background ">
+    <div class="createTaskCard d-flex flex-row ">
+       
+        <div>
+            <h1 class="createTaskHeading">
+                Create New Task 
+            </h1>
+            <p class="createTaskPara">
+                This form allows users to efficiently create new tasks within the CRM system,
+                specifying important details such as title, description, due date, priority, 
+                assignee, status, attachments, comments, reminders, tags, dependencies, and 
+                recurrence options, ensuring comprehensive task management and streamlined workflow.
+            </p>
+            <a href="index.html">
+                <button class="button">Create</button>
+            </a>
+        </div>
+        <div>
+            <img src="task.png" class="taskIcon">
+        </div>
+        
+    </div>
+
+    <div class="createTaskCard ">
+        <h1 class="createTaskHeading">
+             Tasks
+        </h1>
+        <p class="createTaskPara">
+            Provides a list of all assigned tasks with 
+            details like titles, due dates, priority, assignees, and statuses
+            for efficient task management.
+        </p>
+        <button class="button" id="showButton">Show</button> 
+        <div class="container mt-5"  id="taskTable" style="display: none;">
+            <table class="table table-striped" >
+                <thead>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Due Date</th>
+                        <th scope="col">Priority</th>
+                        <th scope="col">Assignee</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Submission</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sample Task 1</td>
+                        <td>2024-07-04</td>
+                        <td>High</td>
+                        <td>John Doe</td>
+                        <td>In Progress</td>
+                        <td>2024-07-05T10:30</td>
+                    </tr>
+                    <tr>
+                        <td>Sample Task 2</td>
+                        <td>2024-07-06</td>
+                        <td>Medium</td>
+                        <td>Jane Smith</td>
+                        <td>Not Started</td>
+                        <td>2024-07-07T14:00</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div> 
+    </div>
+   
+
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>&copy; 2024 Abhijeet Dorge. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

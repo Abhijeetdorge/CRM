@@ -1,0 +1,83 @@
+.nav-bg{
+    background-color: rgb(48, 66, 82);
+}
+#text {
+    color: white;
+    font-size: 20px;
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+}
+
+
+.main-background{
+    background-color: rgb(187, 196, 207);
+    min-height: 100vh;
+    text-align: left;
+    padding: 20px;
+}
+
+
+.createTaskCard{
+    background-color: white;
+    padding: 20px;
+    width: 98%;
+    margin-top: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    min-width: 100vh;
+}
+
+
+.createTaskHeading{
+  color: rgb(30, 22, 22);
+  padding: 10px;
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.createTaskPara{
+    color: rgb(30, 22, 22);
+    padding: 10px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px #ccc, 0 8px #aaa;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:active {
+    box-shadow: 0 2px #ccc, 0 4px #aaa;
+    transform: translateY(4px);
+}
+
+@media (max-width: 767.98px) {
+    .taskIcon {
+        height: 60px;
+        width: 50px;
+    }
+    .createTaskHeading{
+        font-size: 20px;
+    }
+    .createTaskPara{
+        font-size: 20px;
+    }
+}
+
+.container{
+    border-width: 3px;
+    border-color: #333;
+}

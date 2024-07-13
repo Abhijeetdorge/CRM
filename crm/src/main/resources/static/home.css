@@ -1,0 +1,104 @@
+#text {
+    color: white;
+    font-size: 20px;
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+}
+
+.nav-bg{
+    background-color: rgb(48, 66, 82);
+}
+.main-background {
+    background-image: url("Home-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+
+.info-card {
+    background-color: #cecdda;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px; 
+    height: 300px; 
+    width: 300px;
+    margin: 15px;
+    margin-bottom: 40px;
+    text-align: center; 
+}
+
+@media (max-width: 575.98px) {
+    .main-background {
+        background-image: url("Home-bg2.jpeg"); 
+    }
+    .info-card{
+        height: 200px; 
+        width: 200px;
+        margin: 5px;  
+    }
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 10px;
+}
+
+@media (min-width: 575.98px) {
+    .card-container {
+        flex-direction: row; 
+        justify-content: flex-end;
+    }
+}
+
+.heading{
+    color: rgb(4, 20, 107);
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+
+}
+
+.paragragh{
+    color: rgb(17, 18, 18);
+    font-size: 15px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 20px; 
+    }
+
+    .paragragh {
+        font-size: 10px; 
+    }
+}
+
+
+
+.footer {
+    background-color: rgb(48, 66, 82);
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #6c757d;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
